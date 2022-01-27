@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>My Bootstrap project – RK</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Renuka Kanjarla">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/kanjarla.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-12 bg-light">
+                    <div class="col-12 bg-light">My Bootstrap project – RK</div>
+                    <!---navbar when-expandedlink-text-color background-color --->
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+                        <!--hamburger menu
+                        aeia: accessibility--->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                                data-target="#menu" aria-controls="menu" aria-expanded="false" 
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html" target="_blank">My city </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="touristsRK.html" target="_blank">Tourists</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="imagesRK.html" target="_blank">Images</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="parallaxRK.html" target="_blank">Parallax</a>
+                                </li>
+                                <li class="nav-item">                                    
+                                    <a class="nav-link " href="quizRK.html" target="_blank">Quiz</a>
+                                </li>
+                                <li class="nav-item">                                    
+                                    <a class="nav-link " href="bmiRK.html" target="_blank">BMI</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <!---main content of the page-->
+                <section class="col-12 col-lg-12">
+                    <h2>Tourists <small>Note:(images used in this page are free images from https://pixabay.com/)</small></h2>                    
+                </section>
+                <section class="col-12 col-lg-3 col-sm-6">
+                    <h2>Shops</h2>
+                    <div id="top">
+                        <div class="card list-group">
+                            <div class="header">
+                                <a class="card-link list-group-item bg-gray " data-toggle="collapse" href="#One" >Ideapark Oulu</a>
+                            </div>
+                            <div id="One" class="collapse " data-parent="#top">
+                                <div class="card-body">
+                                    <figure>
+                                        <img src="img/idea-park.jpg" alt="idea park" class="img-fluid"> 
+                                    </figure>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card list-group">
+                            <div class="header">
+                                <a class="card-link list-group-item" data-toggle="collapse" href="#Two" >Pentik</a>
+                            </div>
+                            <div id="Two" class="collapse " data-parent="#top">
+                                <div class="card-body">
+                                    <figure>
+                                        <img src="img/pentik.jpg" alt="pentik" class="img-fluid"> 
+                                    </figure>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card list-group">
+                            <div class="header">
+                                <a class="card-link list-group-item" data-toggle="collapse" href="#Three" >Oulun Vadelmatarha</a>
+                            </div>
+                            <div id="Three" class="collapse " data-parent="#top">
+                                <div class="card-body">
+                                    <figure>
+                                        <img src="img/photo-9.jpg" alt="vadelmatarha" class="img-fluid"> 
+                                    </figure>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="col-12 col-lg-3 col-sm-6">
+                    <h2>Music and culture</h2>
+                    <div id="top">
+                        <div class="card list-group">
+                            <div class="header">
+                                <a class="card-link list-group-item" data-toggle="collapse" href="#Four" >Milan</a>
+                            </div>
+                            <div id="Four" class="collapse " data-parent="#top">
+                                <div class="card-body">
+                                    <p>The music of Milan has ancient roots. In recent times city 
+                                        of Milan has been important in culture aspects among all over Europe. 
+                                        It has been center for musical innovation and have opportunity to work with world class musicians.</p>
+                                    <figure>
+                                        <img src="img/image34.jpg" alt="milan" class="img-fluid"> 
+                                    </figure>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card list-group">
+                            <div class="header">
+                                <a class="card-link list-group-item" data-toggle="collapse" href="#Five" >London</a>
+                            </div>
+                            <div id="Five" class="collapse " data-parent="#top">
+                                <div class="card-body">
+                                    <p>Music of London have been heaven for rock music favourite
+                                        persons. For jazz, opera and classical music, 
+                                        London has incredible music scene.London has
+                                        spectacular live music venues and jazz clubs aswell</p>
+                                    <figure>
+                                        <img src="img/london.jpg" alt="London" class="img-fluid"> 
+                                    </figure>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card list-group">
+                            <div class="header">
+                                <a class="card-link list-group-item" data-toggle="collapse" href="#Six" >Sydney</a>
+                            </div>
+                            <div id="Six" class="collapse " data-parent="#top">
+                                <div class="card-body">
+                                    <p>Music of Sydney is a international  place 
+                                        where renowed ones regularly perform in 
+                                        Concert halls of Sydney opera house.Sydney 
+                                        has many international music bands  such as Royal Headache, Circle Pit....</p>
+                                    <figure>
+                                        <img src="img/sydney.jpg" alt="sydney" class="img-fluid"> 
+                                    </figure>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="col-12 col-lg-3 col-sm-6">
+                    <h2>Place of interest <span class="badge badge-info bg-dark">1</span></h2>
+                    <div class="card list-group">
+                        <div class="header">
+                            <a class="card-link list-group-item" data-toggle="collapse" href="#Place1" >
+                                The original Norway in a nutshell
+                            </a>
+                        </div>
+                        <div id="Place1" class="collapse">
+                            <div class="card-body">
+                                <p>This legendary tour takes you through Norway’s most breathtaking 
+                                    UNESCO-protected fjord and mountain scenery, as well as a 
+                                    trip on Europe’s top scenic rail journey.</p>
+                                <figure>
+                                    <img src="img/norway.jpeg" alt="my own cliked image" class="img-fluid"> 
+                                </figure>
+                                <address>Source:<a href="https://www.norwaynutshell.com/original-tour/" target="_blank">
+                                        Norway City</a></address> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 col-lg-3 col-sm-6">
+                    <h2>Place of interest <span class="badge badge-info bg-dark">2</span></h2>
+                    <div class="card list-group">
+                        <div class="header">
+                            <a class="card-link list-group-item" data-toggle="collapse" href="#Place2" >Switzerland
+                            </a>
+                        </div>
+                        <div id="Place2" class="collapse">
+                            <div class="card-body">
+                                <p>Lying at the foot of the Matterhorn, the highest summit of 
+                                    the Swiss Alps, Zermatt is a world-famous resort and a perfect 
+                                    location to enjoy winter sports activities in Switzerland.</p>
+                                <figure>
+                                    <img src="img/switzerland.jpg" alt="my own cliked image" class="img-fluid"> 
+                                </figure>
+                                <address>Source:<a href="https://tourstoeurope.com/ratings/popular-cities-switzerland" target="_blank">
+                                        Switzerland City</a></address> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="row" >
+                <div class="col-12 col-sm-12 col-md-6" >
+                    <p>Renuka Kanjarla</p>
+                    <p>Year: 2020</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <p class="text-right">Bootstrap and Jquery</p>
+
+                </div>
+            </footer>
+
+        </main>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+        crossorigin="anonymous"></script> 
+
+    </body>
+</html>

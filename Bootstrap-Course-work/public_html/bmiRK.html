@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>My Bootstrap project – RK</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Renuka Kanjarla">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+              rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+              crossorigin="anonymous">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/kanjarla.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-12 bg-light">
+                    <div class="col-12 bg-light">My Bootstrap project – RK</div>
+                    <!---navbar when-expandedlink-text-color background-color --->
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+                        <!--hamburger menu
+                        area: accessibility--->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                                data-target="#menu" aria-controls="menu" aria-expanded="false" 
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html" target="_blank">My city </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="touristsRK.html" target="_blank">Tourists</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="imagesRK.html" target="_blank">Images</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="parallaxRK.html" target="_blank">Parallax</a>
+                                </li>
+                                <li class="nav-item">                                    
+                                    <a class="nav-link " href="quizRK.html" target="blank">Quiz</a>
+                                </li>
+                                <li class="nav-item">                                    
+                                    <a class="nav-link " href="bmiRK.html" target="blank">BMI</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <section class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h3>BMI</h3>
+                    <p>Body Mass Index</p>
+                    <form class="container">
+                        <div class="form-group">
+                            <div class="col">
+                                <label class="form-lable" for="year">
+                                    Birth year<a data-container="body"
+                                                 data-toggle="popover" data-placement="top" title="Birth Year: four digits"
+                                                 data-content="Enter your birth year here">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i>                     
+                                    </a>
+                                </label>
+                            </div>
+                            <div class="col"><input id="year" class="form-control" type="number" 
+                                                    placeholder="four digits">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col">
+                                <label  class="form-lable" for="weight">
+                                    Weight(kg)<a
+                                        data-container="body" data-toggle="popover" 
+                                        data-placement="top" title="Weight in kilos with no decimal values" 
+                                        data-content="Enter your weight here in Kilos, no decimals">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i>                      
+                                    </a>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <input id="weight" class="form-control" type="number"
+                                       placeholder="full kilos,no decimals">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col">
+                                <label class="form-lable" for="height">
+                                    Height(cm)<a 
+                                        data-container="body" data-toggle="popover" 
+                                        data-placement="top" title="Height in centimeters with no decimal values" 
+                                        data-content="Enter your height here in centimeters, no decimals">
+                                        <i class="fa fa-question-circle" aria-hidden="true" ></i>                
+                                    </a>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <input id="height" class="form-control" type="number" 
+                                       placeholder="cms, no decimals">
+                            </div>
+                        </div>
+                        <div class="form-check ">
+                            <div class="col">
+                                <input type="checkbox" class="form-check-input"
+                                       value="" id="nw">
+                            </div>
+                            <div class="col">
+                                <label class="form-check-label" for="nw">Show also my normal weight range
+                                    <a data-container="body" 
+                                       data-toggle="popover" data-placement="top"
+                                       title="Normal weight range" data-content="Show my normal weight range">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i>       
+                                    </a></label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-light btn-dark" id="calculateBmi">
+                                <i class="fa fa-calculator" aria-hidden="true"></i>BMI </button>
+                        </div>
+                    </form>
+                </div>
+                <!--coloum 2 of 4--->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h3>Results</h3>
+                    <div class="">
+                        <p class="mt-3">Your BMI:&nbsp;<span id="result"></span></p>
+
+                        <p>Your normal weight:</p>
+                        <p>Please do not use BMI directly to measure fatness or
+                            slimness.The body mass index may have increased,
+                            for example,physique,due to muscularity</p>
+                    </div>
+                    <div class="container">
+                        <button data-toggle="collapse" data-target="#text" class="btn btn-dark" id="status">BMI explanation</button>
+                        <div id="text" class="collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item" id="one">Severly underweight (BMI < 17) </li>
+                                <li class="list-group-item" id="two">Underweight (BMI = 17 -< 18.5)  </li>
+                                <li class="list-group-item" id="three">Normal weight (BMI = 18.5 -< 25) </li>
+                                <li class="list-group-item" id="four" >Overweight (BMI = 25 -< 30) </li>
+                                <li class="list-group-item" id="five" >Moderately obese (BMI = 30 -< 35) </li>
+                                <li class="list-group-item" id="six">Severely obese (BMI = 35 -< 40) </li>
+                                <li class="list-group-item" id="seven">Very severely obese (BMI >= 40)</li>
+                            </ul>                        
+                        </div>
+                    </div>
+                </div>
+                <!--coloum 3 of 4--->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h3>Waist control</h3>                   
+                    <form>
+                        <div class="form-group ">
+                            <label class="col-form-lable" for="waist-male-female">Waist
+                                <a data-container="body" 
+                                   data-toggle="popover" data-placement="bottom" 
+                                   title="Waist length" data-content="Enter your waist in centimeters, no decimals">
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                </a></label>
+                            <div>
+                                <input type="number" class="form-control" id="waist-male-female" placeholder="cms, no decimals">
+                            </div>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" 
+                                   name="option" checked value="1" id="male">
+                            <label class="form-check-label" for="male">male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" 
+                                   name="option"  value="2" id="female">
+                            <label class="form-check-label" for="female">female</label>
+                        </div>
+                        <br><br> 
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-light btn-dark" id="calculate">
+                                <i class="fa fa-heart" aria-hidden="true"></i>Waist </button>
+                        </div>
+                    </form>                   
+
+                </div>
+                <!--coloum 4 of 4--->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <h3>Result<span id="result1"></span></h3> 
+                    <div>
+                        <p>Your waist measurement is an indicator of the level of 
+                            internal fat deposits which coat the heart, kidneys, liver,
+                            digestive organs and pancreas. This can increase the risk
+                            of heart disease and stroke.</p>
+                    </div>
+                    <div>
+                        <ul class="list-group">
+                            <li class="list-group-item">No health risk </li>
+                            <li class="list-group-item">Slight health risk  </li>
+                            <li class="list-group-item">Great health risk</li>
+                        </ul>  
+                    </div>
+                </div>
+
+            </section>
+
+
+            <footer class="row" >
+                <div class="col-12 col-sm-12 col-md-6" >
+                    <p>Renuka Kanjarla</p>
+                    <p>Year: 2020</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <p class="text-right">Bootstrap and Jquery</p>
+
+                </div>
+            </footer>
+
+        </main>
+        <!---here modal html--->
+        <div class="modal" tabindex="-1" role="dialog" id="error_message">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">XXX</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>                   
+                    <div class="modal-body">
+                        <p id="modalText">yyyy</p>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+        <script src="js/bmi.js" type="text/javascript"></script>
+    </body>
+</html>
